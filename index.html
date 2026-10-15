@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agora — a local agentic AI workspace</title>
+<meta name="description" content="Agents with tools, councils, memory, a live Studio and a Painter canvas. Local, BYOK, desktop + Android. Built by one person with an AI pair.">
+<style>
+  :root { --bg: #0f0f13; --bg2: #16161c; --bg3: #1e1e26; --line: #2a2a35; --fg: #e8e8ef; --dim: #9a9aa8; --accent: #b48cff; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 22px; }
+  header { padding: 72px 0 40px; text-align: center; }
+  .badge { display: inline-block; font-size: 13px; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 4px 14px; margin-bottom: 22px; }
+  h1 { font-size: 52px; letter-spacing: -1.5px; line-height: 1.05; }
+  h1 em { color: var(--accent); font-style: normal; }
+  .tag { color: var(--dim); font-size: 19px; max-width: 640px; margin: 18px auto 0; }
+  .cta { margin-top: 34px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn { background: var(--accent); color: #14101f; border-radius: 10px; padding: 13px 26px; text-decoration: none; font-weight: 650; font-size: 15px; }
+  .btn.ghost { background: var(--bg3); color: var(--fg); border: 1px solid var(--line); }
+  .note { color: var(--dim); font-size: 13px; margin-top: 14px; }
+  section { padding: 54px 0 6px; }
+  h2 { font-size: 26px; letter-spacing: -.5px; margin-bottom: 18px; }
+  h2 span { color: var(--accent); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+  .card { background: var(--bg2); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
+  .card b { display: block; margin-bottom: 6px; font-size: 15.5px; }
+  .card p { color: var(--dim); font-size: 14px; }
+  .nums { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; text-align: center; }
+  .num { background: var(--bg2); border: 1px solid var(--line); border-radius: 14px; padding: 22px 10px; }
+  .num b { display: block; font-size: 30px; color: var(--accent); letter-spacing: -1px; }
+  .num span { color: var(--dim); font-size: 13px; }
+  .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+  .shot { background: var(--bg3); border: 1px dashed var(--line); border-radius: 14px; aspect-ratio: 16/10; display: flex; align-items: center; justify-content: center; color: var(--dim); font-size: 14px; text-align: center; padding: 12px; }
+  .story { background: var(--bg2); border: 1px solid var(--line); border-radius: 14px; padding: 26px 28px; color: var(--dim); font-size: 15.5px; }
+  .story b { color: var(--fg); }
+  footer { padding: 56px 0 40px; text-align: center; color: var(--dim); font-size: 13.5px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="badge">one human + one AI · 5.5 weeks · 435+ commits</div>
+  <h1>Agora<br><em>a local agentic AI workspace</em></h1>
+  <p class="tag">Agents that read files, run shells, remember, argue in councils, build websites in a live Studio and paint on a canvas. Local-first. Your keys, your data, your rules.</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/Grecha-dev/agora-showcase/releases">⬇ Windows installer</a>
+    <a class="btn ghost" href="https://github.com/Grecha-dev/agora-showcase">GitHub ↗</a>
+  </div>
+  <div class="note">Android APK — signed release coming soon · BYOK: OpenAI-compatible & Anthropic APIs</div>
+</header>
+
+<section>
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <div class="shot">🎬 Studio — a chat that builds a website, live preview in a device frame</div>
+    <div class="shot">🎨 Painter — canvas split, variant strip, region → vision tags</div>
+    <div class="shot">🗣 Council — agents argue with per-member models</div>
+  </div>
+</section>
+
+<section>
+  <h2>What's inside</h2>
+  <div class="grid">
+    <div class="card"><b>🤖 Agents with cards</b><p>System prompt, model, connection, toolset per agent. Chats are self-sufficient — model and connection materialize at birth.</p></div>
+    <div class="card"><b>🔁 A real agentic loop</b><p>Think → tool call → result → continue. Files, shell with danger analysis, approvals with session grants, MCP + custom JSON tools.</p></div>
+    <div class="card"><b>🗣 Councils</b><p>2–10 agents in one chat: per-member models, rounds, a shared table file. They genuinely argue.</p></div>
+    <div class="card"><b>🧠 Memory that works</b><p>Per-chat memory, digests pinned after the system prompt, compaction with snapshots. Long chats stay sharp.</p></div>
+    <div class="card"><b>⏪ Time machine</b><p>Roll back any message — files roll back with it (git snapshots). Full per-chat git mode: init, diff, commit, push.</p></div>
+    <div class="card"><b>🎬 Studio</b><p>Builds websites with a sandboxed live preview (CSP), real device frames (iPhone/Pixel/Galaxy/iPad) with UA/touch emulation, Figma-style activity feed.</p></div>
+    <div class="card"><b>🎨 Painter</b><p>Image chats with a canvas split and a variant strip. Drag a rect → vision describes the region into your prompt. Point editing for pixels.</p></div>
+    <div class="card"><b>⚙️ Jobs & schedules</b><p>Background shell tasks with owners, watchers and branch inheritance. Cron schedules. Honest failure cards with one-tap fix.</p></div>
+    <div class="card"><b>🌉 Bridges</b><p>Telegram, Discord, Slack — your agents answer where you actually chat.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>The numbers</h2>
+  <div class="nums">
+    <div class="num"><b>5.5</b><span>weeks of development</span></div>
+    <div class="num"><b>435+</b><span>commits, full history</span></div>
+    <div class="num"><b>731</b><span>regression tests, ×2 per deploy</span></div>
+    <div class="num"><b>1</b><span>dependency (isomorphic-git)</span></div>
+    <div class="num"><b>1+1</b><span>one human + one AI</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>The story</h2>
+  <div class="story">
+    <b>Agora is built by one person in pair with an AI.</b> The app is the workflow it
+    implements: a human and agents sharing a workspace, files, memory and responsibility.
+    Every feature shipped the same way — a real report from real use → implementation →
+    731-test regression → deploy to the live machine. No pitch deck: the commit history
+    is the resume.<br><br>
+    Source code is private (it's a product). <b>Available on request</b> — happy to grant
+    repo access on a conversation.
+  </div>
+</section>
+
+<footer>
+  Agora · local-first agentic workspace ·
+  <a href="https://github.com/Grecha-dev/agora-showcase">github/Grecha-dev/agora-showcase</a><br>
+  Built with Node.js (zero-framework server), vanilla JS, Tauri 2 — and an AI pair that never sleeps.
+</footer>
+
+</div>
+</body>
+</html>
