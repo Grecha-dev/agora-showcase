@@ -8,7 +8,7 @@ preview studio, and paint images — under your control, on your machine, with y
 own API keys (BYOK). No cloud account, no subscription to us: the app is local,
 your data stays in a plain folder you own.
 
-- **Download:** [Windows installer](../../releases) · Android APK — coming soon
+- **Demo:** screenshots + video below · Windows/Android beta builds — **on request**
 - **Live site:** https://grecha-dev.github.io/agora-showcase/
 - **Source code:** private. *Available on request — happy to grant repo access.*
 
