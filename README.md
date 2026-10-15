@@ -68,7 +68,7 @@ commit history is the resume.
 ## Roadmap
 
 Signed release APK · slash-commands for skills · Studio stage 2 (preview
-selection -> edit) · red-team council · store listings.
+selection -> edit) 
 
 ---
 
