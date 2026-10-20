@@ -1,6 +1,6 @@
 # Agora
 
-**A local agentic AI workspace. One person + one AI pair. 5 weeks.**
+**A local agentic AI workspace. One person + one AI pair. 6 weeks.**
 
 Agora is a desktop + Android app where AI agents do real work: they read and write
 files, run shell commands, keep memory, argue in councils, build websites in a live
@@ -8,9 +8,9 @@ preview studio, and paint images - under your control, on your machine, with you
 own API keys (BYOK). No cloud account, no subscription to us: the app is local,
 your data stays in a plain folder you own.
 
-- **Demo:** screenshots + video below · Windows/Android beta builds - **on request**
+- **Demo:** screenshots below
 - **Live site:** https://grecha-dev.github.io/agora-showcase/
-- **Source code:** private. *Available on request - happy to grant repo access.*
+- **Source code:** private (it's a product)
 
 ---
 
@@ -51,9 +51,9 @@ model into tags, right into your prompt. Point editing, honestly - for pixels.
 
 | | |
 |---|---|
-| Development time | **5.5 weeks** (Sep 7 -> Oct 15, 2026) |
-| Commits | **435+**, full history |
-| Regression tests | **731**, run twice before every deploy |
+| Development time | **6 weeks** (Sep 7 -> Oct 20, 2026) |
+| Commits | **569**, full history |
+| Regression tests | **983**, run twice before every deploy |
 | Dependencies | one: `isomorphic-git` |
 | Team | **one human + one AI** (built in pair programming with Kimi) |
 
@@ -62,7 +62,7 @@ model into tags, right into your prompt. Point editing, honestly - for pixels.
 Agora is built by one person in pair with an AI. The app *is* the workflow it
 implements: a human and agents sharing a workspace, files, memory and
 responsibility. Every feature above shipped the same way: a real report from real
-use -> implementation -> 731-test regression -> deploy to the live machine. The
+use -> implementation -> 983-test regression -> deploy to the live machine. The
 commit history is the resume.
 
 ## Roadmap
