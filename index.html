@@ -31,7 +31,9 @@
   .num b { display: block; font-size: 30px; color: var(--accent); letter-spacing: -1px; }
   .num span { color: var(--dim); font-size: 13px; }
   .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
-  .shot { background: var(--bg3); border: 1px dashed var(--line); border-radius: 14px; aspect-ratio: 16/10; display: flex; align-items: center; justify-content: center; color: var(--dim); font-size: 14px; text-align: center; padding: 12px; }
+  .shot { background: var(--bg2); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; text-decoration: none; }
+  .shot img { width: 100%; display: block; aspect-ratio: 16/10; object-fit: cover; object-position: top; }
+  .shot span { display: block; color: var(--dim); font-size: 13.5px; padding: 10px 14px; }
   .story { background: var(--bg2); border: 1px solid var(--line); border-radius: 14px; padding: 26px 28px; color: var(--dim); font-size: 15.5px; }
   .story b { color: var(--fg); }
   footer { padding: 56px 0 40px; text-align: center; color: var(--dim); font-size: 13.5px; }
@@ -42,7 +44,7 @@
 <div class="wrap">
 
 <header>
-  <div class="badge">one human + one AI · 5.5 weeks · 435+ commits</div>
+  <div class="badge">one human + one AI · 6 weeks · 569 commits</div>
   <h1>Agora<br><em>a local agentic AI workspace</em></h1>
   <p class="tag">Agents that read files, run shells, remember, argue in councils, build websites in a live Studio and paint on a canvas. Local-first. Your keys, your data, your rules.</p>
   <div class="cta">
@@ -55,9 +57,10 @@
 <section>
   <h2>Screenshots</h2>
   <div class="shots">
-    <div class="shot">Studio: a chat builds a website, live preview in a device frame</div>
-    <div class="shot">Painter: canvas split, variant strip, region -&gt; vision tags</div>
-    <div class="shot">Council: agents argue, per-member models</div>
+    <a class="shot" href="screenshots/studio.png"><img src="screenshots/studio.png" alt="Studio: a chat builds a website, live preview beside it" loading="lazy"><span>Studio: the agent builds a website, the sandboxed preview updates live</span></a>
+    <a class="shot" href="screenshots/painter.png"><img src="screenshots/painter.png" alt="Painter: image chat with a canvas split and variant strip" loading="lazy"><span>Painter: canvas split, variant strip, drag a region and vision tags it into your prompt</span></a>
+    <a class="shot" href="screenshots/council.png"><img src="screenshots/council.png" alt="Council: three agents arguing in one chat" loading="lazy"><span>Council: agents argue in one chat, per-member models, rounds, a shared table file</span></a>
+    <a class="shot" href="screenshots/home.png"><img src="screenshots/home.png" alt="Home: mission control with chats, runs and token usage" loading="lazy"><span>Home: mission control - chats, active runs, token usage, all local</span></a>
   </div>
 </section>
 
@@ -79,9 +82,9 @@
 <section>
   <h2>The numbers</h2>
   <div class="nums">
-    <div class="num"><b>5.5</b><span>weeks of development</span></div>
-    <div class="num"><b>435+</b><span>commits, full history</span></div>
-    <div class="num"><b>731</b><span>regression tests, x2 per deploy</span></div>
+    <div class="num"><b>6</b><span>weeks of development</span></div>
+    <div class="num"><b>569</b><span>commits, full history</span></div>
+    <div class="num"><b>983</b><span>regression tests, x2 per deploy</span></div>
     <div class="num"><b>1</b><span>dependency (isomorphic-git)</span></div>
     <div class="num"><b>1+1</b><span>one human + one AI</span></div>
   </div>
@@ -93,7 +96,7 @@
     <b>Agora is built by one person in pair with an AI.</b> The app is the workflow it
     implements: a human and agents sharing a workspace, files, memory and responsibility.
     Every feature shipped the same way: a real report from real use, implementation,
-    731-test regression, deploy to the live machine. No pitch deck: the commit history
+    983-test regression, deploy to the live machine. No pitch deck: the commit history
     is the resume.<br><br>
     Source code is private (it's a product). <b>Available on request</b> - happy to grant
     repo access on a conversation.
