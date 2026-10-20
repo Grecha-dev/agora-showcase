@@ -1,6 +1,6 @@
 # Agora
 
-**A local agentic AI workspace. One person + one AI pair. 6 weeks.**
+**A local agentic AI workspace. One person + one AI pair. 8+ weeks.**
 
 Agora is a desktop + Android app where AI agents do real work: they read and write
 files, run shell commands, keep memory, argue in councils, build websites in a live
@@ -51,7 +51,7 @@ model into tags, right into your prompt. Point editing, honestly - for pixels.
 
 | | |
 |---|---|
-| Development time | **6 weeks** (Sep 7 -> Oct 20, 2026) |
+| Development time | **8+ weeks** (late Aug -> Oct 20, 2026; the first two weeks were built on a phone) |
 | Commits | **569**, full history |
 | Regression tests | **983**, run twice before every deploy |
 | Dependencies | one: `isomorphic-git` |
